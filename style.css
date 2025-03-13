@@ -1,0 +1,135 @@
+boby {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  position: relative;
+  top: 50%;
+  color: red;
+  font-size: 45px;
+  text-align: center;
+}
+.input {
+  position: relative;
+  bottom: 280px;
+  width: 300px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.perto {
+  position: relative;
+  left: 22%;
+}
+.container__forca {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  z-index: -1;
+}
+
+.container__corpo {
+  position: relative;
+  bottom: 270px;
+  left: 47%;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  z-index: -1;
+}
+
+.container__corpo img {
+  position: absolute;
+}
+
+.cabeca {
+  display: none;
+  top: 34px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75px;
+  z-index: -1;
+}
+
+.corpo {
+  display: none;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.braco-D {
+  display: none;
+  top: 100px;
+  left: 60%;
+  transform: translateX(-50%);
+  width: 40px;
+}
+
+.braco-E {
+  display: none;
+  top: 100px;
+  left: 40%;
+  transform: translateX(-50%);
+  width: 40px;
+}
+
+.perna-D {
+  display: none;
+  top: 202px;
+  left: 63%;
+  transform: translateX(-50%);
+  width: 50px;
+}
+
+.perna-E {
+  display: none;
+  top: 202px;
+  left: 38%;
+  transform: translateX(-50%);
+  width: 50px;
+}
+.letras {
+  position: relative;
+  bottom: 22%;
+}
+.letras__erradas {
+  position: relative;
+  bottom: 65%;
+  display: flex;
+  gap: 10px;
+  font-size: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  list-style: none;
+  z-index: -1;
+}
+.letras__container {
+  display: flex;
+  gap: 10px;
+  font-size: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.vitoria {
+  display: none;
+}
+
+.perdeu {
+  display: none;
+}

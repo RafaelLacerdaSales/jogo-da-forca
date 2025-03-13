@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da forca</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__forca">
+        <img class="perto" src="./img/Group 2.png" alt="" />
+        <div class="partes_do_corpo">
+          <div class="container__corpo">
+            <img class="cabeca" src="/img/Ellipse 1.png" alt="" />
+            <img class="corpo" src="/img/corpo.png" alt="" />
+            <img class="braco-D" src="/img/B-direito.png" alt="" />
+            <img class="braco-E" src="/img/B-esquerdo.png" alt="" />
+            <img class="perna-D" src="/img/p-direito.png" alt="" />
+            <img class="perna-E" src="/img/P-esquerdo.png" alt="" />
+            <!-- img Vitoria -->
+            <img class="vitoria" src="/img/escapou.png" alt="" />
+            <!-- img Perdeu -->
+            <img class="perdeu" src="/img//perdeu.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="letras">
+        <ul class="letras__container">
+          <li id="letras_certas"></li>
+        </ul>
+      </div>
+      <ul class="letras__erradas">
+        <li id="letras_erradas">11</li>
+      </ul>
+      <form class="input">
+        <label for="palavra">Digite a palavra secreta:</label>
+        <input type="text" name="palavra" id="palavra" />
+        <button class="btn" type="submit">Iniciar jogo</button>
+      </form>
+    </div>
+  </body>
+  <script src="/personagem.js"></script>
+</html>
