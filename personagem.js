@@ -1,8 +1,12 @@
 const btn = document.querySelector(".btn");
 const tentativaInput = document.getElementById("palavra");
 const letras_certas = document.getElementById("letras_certas");
-const palavraSecreta = "javascript";
+const letras_erradas = document.getElementById("letras_erradas");
+const palavraSecreta = "oi";
 const tentativasMax = 6;
+const tentativas = document.getElementById("tentativas_numero");
+const venceu = document.querySelector(".vitoria");
+const perdeu = document.querySelector(".perdeu");
 
 let tentativasRestantes = tentativasMax;
 
@@ -27,15 +31,16 @@ btn.addEventListener("click", function (event) {
   } else {
     letrasErradas.push(tentativa);
     tentativasRestantes--;
+    tentativas.innerHTML = tentativasRestantes;
   }
 
   letras_certas.innerHTML = letrasCorretas.join(", ");
-  console.log(`Letras erradas: ${letrasErradas.join(", ")}`);
-  console.log(`Tentativas restantes: ${tentativasRestantes}`);
+  letras_erradas.innerHTML = letrasErradas.join(", ");
 
   if (!letrasCorretas.includes("_")) {
-    console.log(`Parabéns! Você acertou: ${palavraSecreta}`);
+    // console.log(`Parabéns! Você acertou: ${palavraSecreta}`);
+    venceu.style.display = "block";
   } else if (tentativasRestantes === 0) {
-    console.log(`Fim de jogo! A palavra era: ${palavraSecreta}`);
+    perdeu.style.display = "block";
   }
 });
